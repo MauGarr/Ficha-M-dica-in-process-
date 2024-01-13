@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ficha Médica de Paciente</title>
+</head>
+<body>
+    <div class="id_centro">
+        <h1 id="titulo_principal">Ficha Médica de Paciente</h1>
+        <form id="data_centro">
+            <label for="datos_centro">Identificación del Centro:</label>
+            <input type="text" id="datos_centro" name="datos_centro" required>
+        </form>
+    </div>
+
+    <div class="datos_paciente">
+            <h1>Datos del Paciente</h1>
+
+            <label for="num_id">No. de Identificación</label>
+            <input type="text" id="num_id" name="num_id" required>
+        
+            <label for="sexo">Sexo</label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+            
+            <label for="fechaingreso_basedatos">Fecha de Ingreso a la base de datos</label>
+            <input type="date" id="fechaingreso_basedatos" name="fechaingreso_basedatos" required>
+
+            <label for="raza">Raza</label>
+            <select id="raza" name="raza" required>
+                <option value="desconocida">Desconocida</option>
+                <option value="blanca">Blanca</option>
+                <option value="negra">Negra</option>
+                <option value="mestiza">Mestiza</option>
+            </select>
+            
+            <label for="procedencia">Procedencia</label>
+            <select id="procedencia" name="procedencia" required>
+                <option value="urbana">Urbana</option>
+                <option value="rural">Rural</option>
+            </select>
+
+            <label for="fecha_nacimniento">Fecha de Nacimiento</label>
+            <input type="date" id="fecha_nacimniento" name="fecha_nacimniento" required>
+
+            <label for="estatura">Estatura</label>
+            <input type="number" id="estatura" name="estatura" required>
+     
+            <label for="peso">Peso</label>
+            <input type="number" id="peso" name="peso" placeholder="Kilos" required>
+            
+            <label for="masa_corporal">Índice de Masa Corporal</label>
+            <input type="number" id="masa_corporal" name="masa_corporal" placeholder="Kgs/m2" required>
+            
+            <label for="edad_menarquia">Edad Menarquia</label>
+            <input type="number" id="edad_menarquia" name="edad_menarquia" placeholder="Años" required>
+
+            <label for="gestaciones">Número de Gestaciones</label>
+            <input type="number" id="gestaciones" name="gestaciones" required>
+
+            <label for="partos">Número de Partos</label>
+            <input type="number" id="partos" name="partos" required>
+            
+            <label for="edad_primer_embarazo">Edad del Primer Embarazo a término</label>
+            <input type="number" id="edad_primer_embarazo" name="edad_primer_embarazo" placeholder="Años" required>
+
+            <label for="menopausica">¿La paciente es Menopáusica?</label>
+            <select id="menopausica" name="menopausica" required>
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="edad_menopausia">Edad de la Menopausia</label>
+            <input type="number" id="edad_menopausia" name="edad_menopausia" placeholder="Años" required>
+
+            <label for="tipo_menopausia">Tipo de Menopausia</label>
+            <select id="tipo_menopausia" name="tipo_menopausia" required>
+                <option value="natural">Natural</option>
+                <option value="quirurgica sin">Quirúrgica sin ooforectomía bilateral</option>
+                <option value="quirurgica con">Quirúrgica con ooforectomía bilateral</option>
+            </select>
+
+            <label for="terapia_hormonal">La paciente recibe Terapia de Reemplazo Hormonal al inicio de los síntomas o al momento del diagnóstico.</label>
+            <textarea type="text" id="terapia_hormonal" name="terapia_hormonal" required></textarea>
+
+            <label for="duracion_thr">Duración T.H.R</label>
+            <input type="number" id="duracion_thr" name="duracion_thr" placeholder="Meses" required>
+    </div>
+
+    <div class="antecedentes">
+        <h1>Antecedentes</h1>
+
+        <label for="date_primeraconsulta">Fecha Primera Consulta</label>
+        <input type="date" id="date_primeraconsulta" name="date_primeraconsulta" required>
+        
+        <label for="meses_paraconsultar">Meses en demora para consultar</label>
+        <input type="number" id="meses_paraconsultar" name="meses_paraconsultar" required>
+
+        <label for="mamografia_añoanterior">Mamografía durante el año anterior al diagnóstico</label>
+        <textarea type="text" id="mamografia_añoanterior" name="mamografia_añoanterior" required></textarea>
+
+        <label for="biopsias_mamarias">Biopsias mamarias previas</label>
+        <select id="biopsias_mamarias" name="biopsias_mamarias" required>
+            <option value="ninguna">Ninguna</option>
+            <option value="una">Una</option>
+            <option value="masdeuna">Más de una</option>
+        </select>
+
+        <label for="hiperplasia_atipica">¿Alguna fue hiperplasia atípica?</label>
+        <textarea type="text" id="hiperplasia_atipica" name="hiperplasia_atipica" required></textarea>
+        
+        <label for="mama_previo">¿Cáncer de mama previo?</label>
+        <select id="mama_previo" name="mama_previo" required>
+            <option value="no">No</option>
+            <option value="CDIS">CDIS</option>
+            <option value="CLIS">CLIS</option>
+            <option value="ductal infiltrante">Ductal Infiltrante</option>
+            <option value="lobular infiltrante">Lobular Infiltrante</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <label for="lado_tumor">Lado del Tumor Anterior</label>
+        <select id="lado_tumor" name="lado_tumor" required>
+            <option value="no corresponde">No corresponde</option>
+            <option value="ipsilateral">Ipsilateral</option>
+            <option value="contralateral">Contralateral</option>
+        </select>
+
+        <label for="cancer_cuerpo">¿Ha tenido cáncer en algún otro lado del cuerpo?</label>
+        <select id="cancer_cuerpo" name="cancer_cuerpo" required>
+            <option value="no">No</option>
+            <option value="cuello uterino">Cuello uterino</option>
+            <option value="ovario">Ovario</option>
+            <option value="endometrio">Endometrio</option>
+            <option value="colon">Colon</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <label for="parientes_cancer">¿Cuántos parientes en primer grado con Cáncer de Mama?</label>
+        <select id="pacientes_cancer" name="pacientes_cancer" required>
+            <option value="ninguno">Ninguno</option>
+            <option value="uno">Uno</option>
+            <option value="dos">Dos</option>
+            <option value="mas de dos">Más de dos</option>
+        </select>
+
+        <label for="otros_parientescancer">Otros parientes con cáncer de mama</label>
+        <select id="otros_parientescancer" name="otros_parientescancer" required>
+            <option value="ninguno">Ninguno</option>
+            <option value="uno">Uno</option>
+            <option value="dos">Dos</option>
+            <option value="mas de dos">Más de dos</option>
+        </select>
+
+        <label for="parientescon">Parientes con:</label>
+        <form>
+            <label for="opcion1">Parientes con Cáncer de Ovario</label>
+            <input type="checkbox" id="opcion1" name="opcion1">
+        
+            <label for="opcion2">Parientes con Cáncer de Colon</label>
+            <input type="checkbox" id="opcion2" name="opcion2">
+        
+            <label for="opcion3">Parientes con Cáncer de Endometrio</label>
+            <input type="checkbox" id="opcion3" name="opcion3">
+
+            <label for="opcion3">Parientes con otros tipos de Cáncer</label>
+            <input type="checkbox" id="opcion3" name="opcion3">
+        </form>
+
+        <label for="riesgo_relativo">Riesgo Relativo (El cálculo se efectúa automáticamente según las Tablas de Gail, a partir de los datos ya introducidos en la Historia)</label>
+        <textarea type="text" id="riesgo_relativo" name="riesgo_relativo" required></textarea>
+    </div>
+
+    <div class="diagnostico">
+        <h1>Diagnóstico</h1>
+
+        <label for="enfermedad_detectada">¿Enfermedad Detectada?</label>
+        <select id="enfermedad_detectada" name="enfermedad_detectada" required>
+            <option value="casualmente por la paciente">Casualmente por la paciente</option>
+            <option value="autoexamen">Autoexamen</option>
+            <option value="consulta Médica">Consulta Médica</option>
+            <option value="mamografia de pesquisa">Mamografía de Pesquisa</option>
+            <option value="ecografia sola">Ecografía sola</option>
+        </select>
+
+        <label for="descarga_pezon">¿Descarga sanguinolenta o secreción por el pezón?</label>
+        <textarea type="text" id="descarga_pezon" name="descarga_pezon" required></textarea>
+
+        <label for="lesion_palpable">¿Lesión Palpable?</label>
+        <input type="text" id="lesion_palpable" name="lesion_palpable" required>
+
+        <label for="lesion_mamografia">¿Lesión evidenciable por mamografía?</label>
+        <select id="lesion_mamografia" name="lesion_mamografia" required>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+            <option value="No se realizó">No se realizó</option>"
+        </select>
+
+        <label for="lesion_ecosonograma">¿Lesión evidenciable por ecosonograma?</label>
+        <select id="lesion_ecosonograma" name="lesion_ecosonograma" required>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+            <option value="No se realizó">No se realizó</option>"
+        </select>
+
+        <label for="posicion_lesion">Posición de la Lesión</label>
+        <select id="posicion_lesion" name="posicion_lesion" required>
+            <option value="derecha">Derecha</option>
+            <option value="izquierda">Izquierda</option>
+        </select>
+
+        <label for="ubicacion_mama">Ubicación en la mama</label>
+        <select id="ubicacion_mama" name="ubicacion_mama" required>
+            <option value="CSE">CSE</option>
+            <option value="CIE">CIE</option>
+            <option value="CSI">CSI</option>
+            <option value="CII">CII</option>
+            <option value="centro mamaria">Centro mamaria</option>
+            <option value="UCS">UCS</option>
+            <option value="UCInf">UCInf</option>
+            <option value="UCE">UCE</option>
+            <option value="UCInt">UCInt</option>
+            <option value="no se informa">No se informa</option>
+        </select>
+
+        <label for="tumor">Tumor (T)</label>
+        <select id="tumor" name="tumor" required>
+            <option value="T0">T0</option>
+            <option value="TX">TX</option>
+            <option value="t1mic">T1mic</option>
+            <option value="tt1b">TT1b</option>
+            <option value="t1c">T1c</option>
+            <option value="t3">T3</option>
+            <option value="t4a">T4a</option>
+            <option value="t4c">T4c</option>
+            <option value="t4d">T4d</option>
+            <option value="carcinoma inflamatorio">Carcinoma Inflamatorio</option>
+        </select>
+
+        <label for="nodulos_linfaticos">Nódulos Linfáticos</label>
+        <select id="nodulos_linfaticos" name="nodulos_linfaticos" required>
+            <option value="no">No</option>
+            <option value="nx">NX</option>
+            <option value="n1">N1</option>
+            <option value="n2">N2</option>
+        </select>
+
+        <label for="metastasis">Metástasis (M)</label>
+        <select id="metastasis" name="metastasis" required>
+            <option value="mo">Mo</option>
+            <option value="mx">MX</option>
+            <option value="m1">M1</option>
+        </select>
+
+        <label for="ubicacion_metastasis">Ubicación Metástasis</label>
+        <select id="ubicacion_metastasis" name="ubicacion_metastasis" required>
+            <option value="no">No</option>
+            <option value="supracalvic osea">Supracalvic Ósea</option>
+            <option value="pulmonar">Pulmonar</option>
+            <option value="hepatica">Hepática</option>
+            <option value="cerebral">Cerebral</option>
+            <option value="otra">Otra</option>
+        </select>
+
+        <label for="estado_clinico">Estado Clínico</label>
+        <select id="estado_clinico" name="estado_clinico" required>
+            <option value="o">O</option>
+            <option value="i">I</option>
+            <option value="iiia">IIIA</option>
+            <option value="iiib">IIIB</option>
+            <option value="iv">IV</option>
+        </select>
+        
+        <label for="puncion">Punción con aguja fina</label>
+        <select id="puncion" name="puncion" required>
+            <option value="no se hizo">No se hizo</option>
+            <option value="material insuficiente">Material insuficiente</option>
+            <option value="negativa">Negativa</option>
+            <option value="sospechosa">Sospechosa</option>
+            <option value="positiva">Positiva</option>
+        </select>
+
+        <label for="biopsia">Fecha de la Biopsia o PAF confirmatoria</label>
+        <input type="date" id="biopsia" name="biopsia" required>
+
+        <label for="proce_biopsia">Procedimiento de la Biopsia</label>
+        <select id="proce_biopsia" name="proce_biopsia" required>
+            <option value="quirurgica palpatoria">Quirúrgica palpatoria</option>
+            <option value="quirurgica por imagen">Quirúrgica por imagen</option>
+            <option value="microbiopsia por palpacion">Microbiopsia por palpación</option>
+            <option value="microbiopsia ecoguiada">Microbiopsia ecoguiada</option>
+            <option value="abbi">ABBI</option>
+            <option value="microbiopsia estereotaxica">Microbiopsia estereotáxica (core)</option>
+            <option value="mamotomia estereotaxica">Mamotomía estereotáxica</option>
+            <option value="mibb">MIBB</option>
+            <option value="mamotomia ecoguiada">Mamotomía ecoguiada</option>
+        </select>
+
+        <label for="biopsia_preoperatoria">Biopsia Preoperatoria</label>
+        <input type="text" id="biopsia_preoperatoria" name="biopsia_preoperatoria" required>
+
+        <label for="corte_congelado">Corte Congelado</label>
+        <select id="corte_congelado" name="corte_congelado" required>
+            <option value="no">No</option>
+            <option value="benigno">Benigno</option>
+            <option value="maligno">Maligno</option>
+            <option value="diferido">Diferido</option>
+        </select>
+
+        <label for="resultado_microbiopsia">Resultado de la Microbiopsia</label>
+        <select id="resultado_microbiopsia" name="resultado_microbiopsia" required>
+            <option value="no se hizo">No se hizo</option>
+            <option value="insuficiente">Insuficiente</option>
+            <option value="benigna">Benigna</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <label for="fecha_cancer">Fecha de la Confirmación Citohistológica del diagnóstico de cáncer</label>
+        <input type="date" id="fecha_cancer" name="fecha_cancer" required>
+
+        <label for="cant_gan_extraidos">Cantidad de Ganglios Extraídos</label>
+        <input type="number" id="cant_gan_extraidos" name="cant_gan_extraidos" required>
+
+        <label for="cant_gan_extra_positivos">Cantidad de Ganglios Extraídos Positivos</label>
+        <input type="number" id="cant_gan_extra_positivos" name="cant_gan_extra_positivos" required>
+    </div>
+</body>  
+</html>
